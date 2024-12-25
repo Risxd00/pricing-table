@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Hint: What can you do with a media query and flexbox? */
+      
+      @media(max-width:1600px){
+
+      body { font-family: "Sono", sans-serif;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background-color: white; 
+        background-image: url(./images/823985479947.jpg);
+        background-size: 100% 100%;
+        margin: 0; 
+      } 
+      .pricing-container{
+        display: flex;
+        gap: 20px;
+      }
+
+      .pricing-plan{
+        background-color: #f2f2f2; 
+        border: 1px solid #f2f2f2;
+        border-radius: 10px; 
+        padding: 20px; 
+        text-align: center;
+        width: 200px;
+      }
+
+      .plan-features{
+        list-style: none;
+        padding: 0px;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-size: small;
+      }
+
+      .plan-title{
+        font-size: 1em;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .plan-price{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .plan-button{
+        background-color: #ff6500;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      .plan-button:hover{ 
+        background-color: #e65c00;
+      }
+
+      .plan-features li{
+        margin: 10px 0;
+      }
+    }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: start;
+        width: 100%;
+        color: white;
+        padding-left: 100px;
+        font-size: small;
+      }
+
+
+    @media(max-width: 990px){
+      .pricing-container{
+        flex-direction: column;
+      }
+      body{
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <a href="./signup page.html"><button class="plan-button">Sign Up</button></a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <a href="./signup page.html"><button class="plan-button">Sign Up</button></a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 1 TB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <a href="./signup page.html"><button class="plan-button">Sign Up</button></a>
+      </div>
+    </div>
+
+    <footer> 
+      <div class="footer-content"> 
+        <p>&copy; 2024 Your Company. All rights reserved. Contact us: cvrishad8@gmail.com</p> 
+      </div>
+    </footer>
+  </body>
+</html>
